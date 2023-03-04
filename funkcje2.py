@@ -11,4 +11,13 @@ def welcome_basic():
 welcome_basic()
 
 
-#welcme_full
+def welcome_full(imie, wiek):
+    if wiek >= 18:
+        print('Dzien dobry', imie)
+    else:
+        print('Czesc', imie)
+
+def stan_zdrowia(waga, wzrost):
+    BMI = waga / (wzrost**2)
+    return BMI
+
