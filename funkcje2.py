@@ -17,7 +17,11 @@ def welcome_full(imie, wiek):
     else:
         print('Czesc', imie)
 
-def stan_zdrowia(waga, wzrost):
+def stan_zdrowia(waga = 65, wzrost = 1.8):
     BMI = waga / (wzrost**2)
-    return BMI
+    if BMI > 35:
+        return 1
+    elif BMI > 28:
+        return 2
+    return 3
 
